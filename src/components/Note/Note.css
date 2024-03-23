@@ -1,0 +1,48 @@
+.note{
+    height: 300px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(166, 191, 201);
+}
+.note_title {
+    resize: none;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background-color: transparent;
+}
+.note_text{
+    flex: 1;
+    resize: none;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    outline: none;
+    word-spacing :5px;
+    background-color: transparent;
+    overflow-y: scroll;
+}
+
+.note_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(65, 64, 64);
+    font-weight: 400;
+}
+.note_footer ion-icon{
+    cursor: pointer;
+    font-size: larger;
+    opacity: 0;
+    transition: 300ms;
+}
+.note:hover .note_footer ion-icon{
+    color: black;
+    opacity: 1;
+}
