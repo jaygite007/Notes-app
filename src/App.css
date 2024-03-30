@@ -11,9 +11,12 @@
 }
 .content{
   display: flex;
+  /* justify-content: center;
+  align-items: center; */
   gap: 30px;
   padding: 10px;
 }
+
 .t{
   text-align: center;
   display: block;
@@ -27,3 +30,12 @@
   font-weight: bold;
 }
 
+@media only screen and (max-width: 600px) {
+ 
+  .content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+  }
+}
